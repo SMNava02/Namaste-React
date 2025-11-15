@@ -1,5 +1,5 @@
 # Namaste React
-React application. This is a playground project for POCs of new react libraries/frameworks.
+This is a React playground project for POCs of new libraries/frameworks.
 
 # Parcel (Refer parceljs.org)
 - Dev build
