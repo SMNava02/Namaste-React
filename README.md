@@ -1,7 +1,7 @@
 # Namaste React
 This is a React playground project for POCs of new libraries/frameworks.
 
-# Parcel (Refer parceljs.org)
+# Parcel (Refer [Parcel](https://parceljs.org/))
 - Dev build
 - Local Server
 - HMR = Hot Module Replacement

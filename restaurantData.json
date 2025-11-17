@@ -1,0 +1,82 @@
+[
+  {
+    "storeUuid": "9535ab75-a9df-4269-9ba5-884db08ed422",
+    "name": "Punjabi Curry House",
+    "cuisine": ["Indian", "Roti Curry", "Butter Chicken"],
+    "deliveryTime": "18+ min",
+    "rating": "4.6",
+    "actionUrl": "/store/punjabi-curry-house-north-lakes/lTWrdanfQmmbpYhNsI7UIg",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/ace236f675045c9309908349d301034d/885ba8620d45ab36746a0e8c7b85ee66.jpeg"
+  },
+  {
+    "storeUuid": "9abe79db-7a68-41dd-ac82-b0def91b6aae",
+    "name": "Mango Hill Kebabs",
+    "cuisine": ["Fast food", "Kebabs", "Grill"],
+    "deliveryTime": "10+ min",
+    "rating": "4.6",
+    "actionUrl": "/store/mango-hill-kebabs-north-lakes/mr5523poQd2sgrDe-Rtqrg",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/0fff322ea353998def8fd3789099097c/1da9a9e826d15157cea1c5bb8696f248.jpeg"
+  },
+  {
+    "storeUuid": "10dfd351-ce75-5d4f-9950-e62576193dd7",
+    "name": "Mood Desserts",
+    "cuisine": ["Sweet", "Desserts"],
+    "deliveryTime": "11+ min",
+    "rating": "4.1",
+    "actionUrl": "/store/mood-desserts-north-lakes/EN_TUc51XU-ZUOYldhk91w",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/1a7c9f398351b01b4b673baa5771ea13/1da9a9e826d15157cea1c5bb8696f248.jpeg"
+  },
+  {
+    "storeUuid": "68f71450-fdc0-49b1-9757-5b5f184a5fec",
+    "name": "Brodies Chicken & Burgers",
+    "cuisine": ["Fast food", "Burgers"],
+    "deliveryTime": "19+ min",
+    "rating": "4.5",
+    "actionUrl": "/store/brodies-chicken-%26-burgers-murrumba-downs/aPcUUP3ASbGXV1tfGEpf7A",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/7a2959213be6808e499a4f99730eeeef/5283d81c664b43c5f57a3a186d273063.jpeg"
+  },
+  {
+    "storeUuid": "9535ab75-a9df-4269-9ba5-884db08ed4222",
+    "name": "Punjabi Curry House 2",
+    "cuisine": ["Indian", "Roti Curry", "Butter Chicken"],
+    "deliveryTime": "18+ min",
+    "rating": "4.6",
+    "actionUrl": "/store/punjabi-curry-house-north-lakes/lTWrdanfQmmbpYhNsI7UIg",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/ace236f675045c9309908349d301034d/885ba8620d45ab36746a0e8c7b85ee66.jpeg"
+  },
+  {
+    "storeUuid": "9abe79db-7a68-41dd-ac82-b0def91b6aae2",
+    "name": "Mango Hill Kebabs 2",
+    "cuisine": ["Fast food", "Kebabs", "Grill"],
+    "deliveryTime": "10+ min",
+    "rating": "4.6",
+    "actionUrl": "/store/mango-hill-kebabs-north-lakes/mr5523poQd2sgrDe-Rtqrg",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/0fff322ea353998def8fd3789099097c/1da9a9e826d15157cea1c5bb8696f248.jpeg"
+  },
+  {
+    "storeUuid": "10dfd351-ce75-5d4f-9950-e62576193dd72",
+    "name": "Mood Desserts 2",
+    "cuisine": ["Sweet", "Desserts"],
+    "deliveryTime": "11+ min",
+    "rating": "4.1",
+    "actionUrl": "/store/mood-desserts-north-lakes/EN_TUc51XU-ZUOYldhk91w",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/1a7c9f398351b01b4b673baa5771ea13/1da9a9e826d15157cea1c5bb8696f248.jpeg"
+  },
+  {
+    "storeUuid": "68f71450-fdc0-49b1-9757-5b5f184a5fec2",
+    "name": "Brodies Chicken & Burgers 2",
+    "cuisine": ["Fast food", "Burgers"],
+    "deliveryTime": "19+ min",
+    "rating": "4.5",
+    "actionUrl": "/store/brodies-chicken-%26-burgers-murrumba-downs/aPcUUP3ASbGXV1tfGEpf7A",
+    "favorite": false,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/7a2959213be6808e499a4f99730eeeef/5283d81c664b43c5f57a3a186d273063.jpeg"
+  }
+]
