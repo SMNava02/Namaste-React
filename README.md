@@ -17,3 +17,23 @@ This is a React playground project for POCs of new libraries/frameworks.
 - HTTPs
 - Tree shaking = Remove unused code/files
 - Different dev (`npx parcel index.html`) and prod builds (`npx parcel build index.html`)
+
+# Foodie APP component hierarchy
+
+/**
+ * Header
+ *  - Logo
+ *  - Nav items
+ *    - Home
+ *    - About
+ *    - Cart
+ * Body
+ *  - Search
+ *  - Restaurant Container
+ *     - Restaurant cards
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
