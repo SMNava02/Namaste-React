@@ -12,6 +12,11 @@ const Body = () => {
     //Fetch the data from API
     console.log("API call from useEffect");
     fetchData();
+
+    return () => {
+      // Used to clean up Timers
+      console.log("Clean up before body component Unmounts");
+    };
   }, []);
 
   console.log("Body rendered");
