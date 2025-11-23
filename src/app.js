@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -8,7 +8,9 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 
-//JSX -> transpiled using Babel to React element -> React JS Object -> HTML on render
+//Lazy loading || chunkking || Code splitting || On demand loading
+// Seperate bundle will be created for Grocery and will be loaded on demand when the user navigates
+const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => (
   <div className="app">
@@ -34,6 +36,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/grocery",
+        element: (
+          <Suspense fallback={<h1>Loading.....</h1>}>
+            <Grocery />
+          </Suspense>
+        ),
       },
       {
         path: "/restaurant/:resId",
