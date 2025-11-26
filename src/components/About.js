@@ -17,7 +17,7 @@ class About extends React.Component {
   render() {
     console.log("Parent: Render");
     return (
-      <div>
+      <div className="p-4 m-4">
         <h1>About Us</h1>
         <h2>This is a Sample React Food App</h2>
         <h2>Contributors</h2>

@@ -49,10 +49,10 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="flex justify-normal text-center">
+        <div className="p-4 m-4">
           <input
-            className="searchBox"
+            className="border-2 border-gray-400"
             value={searchTxt}
             onChange={(e) => {
               console.log(`onchange triggered with value ${e.target.value}`);
@@ -60,7 +60,7 @@ const Body = () => {
             }}
           ></input>
           <button
-            className="searchBtn"
+            className="w-20 m-2 bg-gray-300 rounded-2xl hover:bg-gray-600"
             onClick={() => {
               setFilteredRestaurantList(
                 restaurantList.filter((res) =>
@@ -72,8 +72,9 @@ const Body = () => {
             Search
           </button>
         </div>
-        <div className="filter-res">
+        <div className="p-4 m-4">
           <button
+            className="w-46 m-2 bg-gray-300 rounded-2xl hover:bg-gray-600"
             onClick={() => {
               setFilteredRestaurantList(
                 restaurantList.filter((res) => res.info.avgRating > 4.5)
@@ -84,7 +85,7 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap p-4 m-4">
         {filteredRestaurantList.map((restaurant) => (
           <Link
             key={restaurant.info.id}

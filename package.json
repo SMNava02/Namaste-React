@@ -16,7 +16,9 @@
     "test": "jest"
   },
   "devDependencies": {
-    "parcel": "^2.16.1"
+    "@tailwindcss/postcss": "^4.1.17",
+    "parcel": "^2.16.1",
+    "tailwindcss": "^4.1.17"
   },
   "dependencies": {
     "react": "^19.2.0",

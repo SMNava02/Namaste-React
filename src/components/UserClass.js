@@ -18,9 +18,9 @@ class UserClass extends React.Component {
     console.log("Child: Render");
     const { count } = this.state;
     return (
-      <div className="user-card">
-        <h1>Count: {count}</h1>
-        <button
+      <div className="my-3 border-2 border-gray-500">
+        {/* <h1>Count: {count}</h1> */}
+        {/* <button
           onClick={() => {
             //Never updater state variables directly, always use setState fn
             this.setState({
@@ -29,7 +29,7 @@ class UserClass extends React.Component {
           }}
         >
           Increment Count
-        </button>
+        </button> */}
         <h3>Name: {this.props.name}</h3>
         <h3>Location: {this.props.location}</h3>
         <h3>Contact: @sm02</h3>
