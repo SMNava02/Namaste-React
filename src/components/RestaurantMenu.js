@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import Shimmer from "./Shimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
+import RestaurantCategory from "./RestaurantCategory";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -12,17 +13,21 @@ const RestaurantMenu = () => {
 
   const { name, cuisines, costForTwoMessage } = resInfo;
 
+  const categories = resMenu.filter((categoryCard) =>
+    categoryCard?.card?.card?.["@type"].includes("itemCategory")
+  );
+
   return (
-    <div>
-      <h1>{name}</h1>
-      <h3>{cuisines.join(", ")}</h3>
-      <h3>{costForTwoMessage}</h3>
-      <h2>Menu</h2>
-      <ul>
-        {resMenu.map((item) => (
-          <li key={item.card.info.id}>{item.card.info.name}</li>
-        ))}
-      </ul>
+    <div className="text-center">
+      <h1 className="font-bold">{name}</h1>
+      <h3>
+        {cuisines.join(", ")} - {costForTwoMessage}
+      </h3>
+      {categories.map((category) => (
+        <div key={category?.card?.card?.title}>
+          <RestaurantCategory data={category?.card?.card} />
+        </div>
+      ))}
     </div>
   );
 };

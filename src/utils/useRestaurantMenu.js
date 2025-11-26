@@ -15,19 +15,9 @@ const useRestaurantMenu = (resId) => {
     //   "https://corsproxy.io/?url=https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9352403&lng=77.624532&restaurantId=10576&catalog_qa=undefined&submitAction=ENTER"
     // );
     // const json = await data.json();
+    setResMenu(mockData?.data?.cards);
 
-    console.log(mockData);
-
-    console.log(
-      mockData?.data?.cards[1]?.groupedCard?.cardGroupMap?.REGULAR?.cards[0]
-        ?.card?.card?.itemCards
-    );
-    setResMenu(
-      mockData?.data?.cards[1]?.groupedCard?.cardGroupMap?.REGULAR?.cards[0]
-        ?.card?.card?.itemCards
-    );
-
-    setResInfo(mockData?.data?.cards[0].card.card.info);
+    setResInfo(mockData?.data?.info);
   };
 
   return { resInfo, resMenu };

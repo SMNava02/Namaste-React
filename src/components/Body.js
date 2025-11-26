@@ -1,5 +1,5 @@
 import useOnlineStatus from "../utils/useOnlineStatus";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { rcWithLabels } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
@@ -40,6 +40,8 @@ const Body = () => {
   };
 
   const onlineStatus = useOnlineStatus();
+
+  const RestaurantCardWithPromoLabel = rcWithLabels(RestaurantCard);
 
   if (!onlineStatus)
     return <h1>Looks like your internet connection is down! pls check!</h1>;
@@ -91,7 +93,11 @@ const Body = () => {
             key={restaurant.info.id}
             to={`/restaurant/${restaurant.info.id}`}
           >
-            <RestaurantCard resData={restaurant} />
+            {restaurant.info.promoted ? (
+              <RestaurantCardWithPromoLabel resData={restaurant} />
+            ) : (
+              <RestaurantCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
