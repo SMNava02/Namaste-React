@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -7,17 +7,31 @@ import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
+import UserContext from "./utils/UserContext";
 
 //Lazy loading || chunkking || Code splitting || On demand loading
 // Seperate bundle will be created for Grocery and will be loaded on demand when the user navigates
 const Grocery = lazy(() => import("./components/Grocery"));
 
-const AppLayout = () => (
-  <div className="app">
-    <Header />
-    <Outlet />
-  </div>
-);
+const AppLayout = () => {
+  const [userName, setUserName] = useState(null);
+  useEffect(() => {
+    //Auth call to set user
+    const data = {
+      loggedInUser: "SM",
+    };
+    setUserName(data.loggedInUser);
+  }, []);
+
+  return (
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div className="app">
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
+  );
+};
 
 const appRouter = createBrowserRouter([
   {

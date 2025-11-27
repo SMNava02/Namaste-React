@@ -1,10 +1,8 @@
 import ItemCards from "./ItemCards";
-import { useState } from "react";
 
-const RestaurantCategory = ({ data }) => {
-  const [showItemCards, setShowItemCards] = useState(false);
+const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
   const handleAccordionClick = () => {
-    setShowItemCards(!showItemCards);
+    setShowIndex();
   };
   return (
     <div>
@@ -18,7 +16,7 @@ const RestaurantCategory = ({ data }) => {
         </span>
         <span>🔽</span>
       </div>
-      <div>{showItemCards && <ItemCards items={data?.itemCards} />}</div>
+      <div>{showItems && <ItemCards items={data?.itemCards} />}</div>
     </div>
   );
 };
