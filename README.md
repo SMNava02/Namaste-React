@@ -37,3 +37,13 @@ This is a React playground project for POCs of new libraries/frameworks.
  *  - Address
  *  - Contact
  */
+
+ # Testing Setup
+ - Install React testing library
+ - Install Jest
+ - Install babel dependency (Jest)
+ - Configure Babel (`babel.config.js`)
+ - Configure parcel config to diable default babel transpilation (`.parcelrc`)
+ - `npm init jest` (test env as `jsdom` for browser simulation)
+ - install `jsdom` library
+ - 
